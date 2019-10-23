@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team a"
+                android:textAllCaps="true"
+                android:textColor="#ff6600"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Batting"
+                android:textColor="#0000cc"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Score"
+                android:textColor="#0000cc"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/score_team_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textColor="#0000cc"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy1A"
+                android:text="+1 runs"
+                android:textAllCaps="true"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy2A"
+                android:text="+2 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy3A"
+                android:text="+3 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy4A"
+                android:text="+4 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy6A"
+                android:text="+6 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textAllCaps="true"
+                android:textColor="#ff6600"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Batting"
+                android:textColor="#660000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:textColor="#660000"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/score_team_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#660000"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy1B"
+                android:text="+1 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy2B"
+                android:text="+2 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy3B"
+                android:text="+3 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy4B"
+                android:text="+4 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="incrementRunsBy6B"
+                android:text="+6 runs"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="team b"
+                android:textAllCaps="true"
+                android:textColor="#ff6600"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="Bowling"
+                android:textColor="#660000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="No of balls"
+                android:textColor="#660000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/no_of_balls_team_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="0"
+                android:textColor="#660000"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="7dp"
+                android:onClick="incrementNoOfBallsB"
+                android:text="+1 ball"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="team a"
+                android:textAllCaps="true"
+                android:textColor="#ff6600"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="Bowling"
+                android:textColor="#0000cc"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:text="No of balls"
+                android:textColor="#0000cc"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/no_of_balls_team_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#0000cc"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="7dp"
+                android:onClick="incrementNoOfBallsA"
+                android:text="+1 ball"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:onClick="reset"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:textAllCaps="true" />
+
+</LinearLayout>
